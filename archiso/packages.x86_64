@@ -121,7 +121,7 @@ zsh
 #######################################################
 
 alci-calamares
-alci-calamares-config-zen
+alci-calamares-config-btrfs-zen
 xterm
 
 #######################################################
@@ -188,7 +188,8 @@ steam
 steam-native-runtime
 
 ### GAMING TOOLS
-yay
+ame
+opera
 argyllcms
 boxtron
 corectrl
@@ -218,9 +219,7 @@ vkbasalt
 wine-staging
 
 ##### display manager
-#sddm
-lightdm
-lightdm-gtk-greeter
+sddm
 
 ## AUR support
 octopi
@@ -284,10 +283,13 @@ linux-zen
 linux-zen-headers
 
 #cinnamon
-budgie
+#budgie
 #nemo-fileroller
 #cinnamon-translations
 #gnome-terminal
+plasma
+plasma-wayland-session
+kde-applications
 git
 
 #grub theme
