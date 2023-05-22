@@ -112,7 +112,7 @@ zsh
 
 # everything above comes from archiso releng folder
 #######################################################
-###                    ALCI                         ###
+###                   calamares                     ###
 #######################################################
 
 #######################################################
@@ -120,8 +120,8 @@ zsh
 ###             VIA CALAMARES CONFIG                ###
 #######################################################
 
-alci-calamares
-alci-calamares-config-btrfs-zen
+fcgnu-calamares
+fcgnu-calamares-config-btrfs-zen
 xterm
 
 #######################################################
@@ -189,7 +189,6 @@ steam-native-runtime
 
 ### GAMING TOOLS
 ame
-opera
 argyllcms
 boxtron
 corectrl
@@ -287,10 +286,10 @@ linux-zen-headers
 #nemo-fileroller
 #cinnamon-translations
 #gnome-terminal
-plasma
+plasma-desktop
 plasma-wayland-session
-kde-applications
+maui
 git
 
 #grub theme
-alci-grub-theme-git
+catppuccin-macchiato-grub-theme-git
