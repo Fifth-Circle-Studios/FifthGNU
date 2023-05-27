@@ -1,0 +1,47 @@
+# Arch packages
+base
+grub
+arch-install-scripts
+reflector
+pacman-contrib
+linux-firmware
+tree
+linux-zen
+mkinitcpio
+mkinitcpio-archiso
+openssh
+syslinux
+networkmanager
+zsh
+fish
+curl
+openbsd-netcat
+memtest86+
+edk2-shell
+sudo
+dosfstools
+systemd-sysvcompat
+cowsay
+btrfs-progs
+xfsprogs
+gparted
+archinstall
+xorg
+xorg-apps
+xorg-xinit
+mesa
+opera
+
+# Things we're hosting
+neofetch
+
+# Our in-house
+ame
+ouroboros
+ouroboros-gui
+gnome
+
+# Text editors (issue #2)
+nano
+micro
+vim

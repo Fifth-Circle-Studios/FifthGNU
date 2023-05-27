@@ -1,0 +1,5 @@
+NAME="Fifth Circle GNU"
+PRETTY_NAME="Fifth Circle GNU"
+ID=fifthgnu
+ID_LIKE=arch
+BUILD_ID=rolling
