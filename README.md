@@ -17,8 +17,10 @@
 ## How to Build:
 You will have to use Arch or Arch-Based distros to build this ISO File.
 * Install Dependencies
+* Download this Repo & Specific Branch
+  * `git clone https://gitlab.com/FearcrossingTTV/Fifth-Circle-GNU/-/tree/Dev-From-Scratch`
 * Go to the project folder
-* Run `./build.sh --build-iso` to build an iso image
-* Or Run `./build.sh --build-bootstrap` to build a rootfs tarball    
+* Open Installation-Scripts & Run `./30-build-the-iso-the-first-time.sh` to build an iso image for the First time.
+* Or Open Installation-Scripts & Run `./40-build-the-iso-local-again.sh` to rebuild an Iso Locally
 * or run `./mkarchiso` and use the wiki on Archlinux to build it as a iso.
 
