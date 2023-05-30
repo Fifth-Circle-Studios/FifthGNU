@@ -219,7 +219,7 @@ vkbasalt
 wine-staging
 
 ##### display manager
-sddm
+#sddm
 
 ## AUR support
 pamac
@@ -280,13 +280,16 @@ sshfs
 xfsprogs
 git
 
+# Unity Setup
+unity-meta
+
 # Pantheon Setup ??
-pantheon
-pantheon-session
-pantheon-default-settings
-pantheon-mail
-pantheon-settings-daemon
-pantheon-print
-pantheon-polkit-agent
-pantheon-geoclue2-agent
-pantheon-applications-menu
+# pantheon
+# pantheon-session
+# pantheon-default-settings
+# pantheon-mail
+# pantheon-settings-daemon
+# pantheon-print
+# pantheon-polkit-agent
+# pantheon-geoclue2-agent
+# pantheon-applications-menu
