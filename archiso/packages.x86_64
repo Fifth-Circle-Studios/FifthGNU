@@ -1,3 +1,4 @@
+## Arch Packages ------------------------------
 alsa-utils
 amd-ucode
 arch-install-scripts
@@ -6,7 +7,7 @@ b43-fwcutter
 base
 bind
 brltty
-broadcom-wl-dkms
+broadcom-wl
 clonezilla
 cloud-init
 cryptsetup
@@ -20,15 +21,15 @@ dmraid
 dnsmasq
 edk2-shell
 efibootmgr
-espeakup
+#espeakup
 ethtool
 fsarchiver
 gnu-netcat
 gpart
 gpm
 gptfdisk
-grml-zsh-config
-grub
+#grml-zsh-config
+#grub
 hdparm
 hyperv
 intel-ucode
@@ -40,12 +41,12 @@ less
 lftp
 libfido2
 libusb-compat
-#linux
+#fifthgnu-kernel
 linux-zen
 linux-atm
 linux-firmware
 linux-firmware-marvell
-livecd-sounds
+#livecd-sounds
 lsscsi
 lvm2
 lynx
@@ -53,9 +54,9 @@ man-db
 man-pages
 mc
 mdadm
-memtest86+
-memtest86+-efi
+#memtest86+
 mkinitcpio
+mkinitcpio-openswap
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
 modemmanager
@@ -76,7 +77,7 @@ pcsclite
 ppp
 pptpclient
 pv
-qemu-guest-agent
+#qemu-guest-agent
 refind
 reflector
 rp-pppoe
@@ -101,95 +102,252 @@ usb_modeswitch
 usbmuxd
 usbutils
 vim
-virtualbox-guest-utils-nox
+#virtualbox-guest-utils-nox
 vpnc
 wireless-regdb
 wireless_tools
 wpa_supplicant
 wvdial
 xl2tpd
-zsh
+fish
 
-
-# everything above comes from archiso releng folder
-#######################################################
-###                   calamares                     ###
-#######################################################
-
-#######################################################
-###  PACKAGES THAT ARE REMOVED AFTER INSTALLATION   ###
-###             VIA CALAMARES CONFIG                ###
-#######################################################
-
-fcgnu-calamares
-fcgnu-calamares-config-btrfs-zen
-xterm
-
-#######################################################
-###      PACKAGES THAT STAY AFTER INSTALLATION      ###
-#######################################################
-
+## Bootloader ------------------------------
 bash-completion
 os-prober
+refind
+lsb-release
 dex
 libxinerama
-make
+
+## Splash Screen ------------------------------
+plymouth
+fifthgnu-plymouth
+
+## Xorg Server ------------------------------
+xorg
 xorg-xkill
-xterm
 xorg-xrdb
-mkinitcpio-openswap
-
-##### you can also use nmtui from the terminal
-networkmanager
-network-manager-applet
-
-#######################################################
-###                    EXTRAS                       ###
-#######################################################
-
-##### xorg applications
-
 xorg-server
 xorg-xwayland
 xorg-xhost
 xorg-xinit
 xorg-xinput
 xorg-apps
-neofetch
 
-
-##### Drivers for graphical cards
-
-#driver for virtualbox - xf86-video-vmware is dependency
-#systemctl enable vboxservice
-#systemctl start vboxservice
-#to have fullscreen
-#virtualbox-guest-utils
-
-#xf86-video-intel
+## GPU Drivers (Intel/AMD/VM) ------------------------------
+xf86-video-fbdev
+xf86-video-vesa
+xf86-video-intel
 xf86-video-amdgpu
+xf86-video-ati
 mesa
-lib32-mesa
-vulkan-radeon
-libva-mesa-driver
-lib32-libva-mesa-driver
-mesa-vdpau
-lib32-mesa-vdpau
-#xf86-video-nouveau
+mesa-utils
 
-#nvidia
-#nvidia-settings
-#nvidia-utils
+## GPU Drivers (Nvidia) ------------------------------
+xf86-video-nouveau
+nvidia
+nvidia-utils
+nvidia-settings
 
-#### GAME LAUNCHERS
+## System ------------------------------
+
+## Networking
+networkmanager
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-strongswan
+networkmanager-vpnc
+network-manager-sstp
+nm-connection-editor
+network-manager-applet
+
+## Bluetooth
+bluez
+bluez-utils
+blueman
+
+## Audio
+pipewire
+wireplumber
+pipewire-alsa
+pipewire-pulse
+pipewire-jack
+pulsemixer
+pavucontrol
+gst-plugin-pipewire
+
+## Video
+libde265
+libdv
+libmpeg2
+schroedinger
+libtheora
+libvpx
+x264
+x265
+xvidcore
+gstreamer
+ffmpeg
+gst-libav
+gst-plugins-good
+gst-plugins-ugly
+gst-plugins-bad
+
+## Print
+cups
+cups-pdf
+cups-filters
+ghostscript
+gsfonts
+foomatic-db-engine
+foomatic-db
+gutenprint
+
+## BTRFS Packages ------------------------------
+timeshift
+#grub-btrfs
+timeshift-autosnap
+btrfs-progs
+curlftpfs
+dosfstools
+e2fsprogs
+ecryptfs-utils
+exfatprogs
+f2fs-tools
+fatresize
+jfsutils
+mtools
+nfs-utils
+nilfs-utils
+ntfs-3g
+reiserfsprogs
+sshfs
+xfsprogs
+git
+
+## Chaotic AUR ------------------------------
+chaotic-mirrorlist
+chaotic-keyring
+
+## Installer ------------------------------
+
+## Calamares
+boost
+fifthgnu-installer
+fifthgnu-config
+
+## Display Manager ------------------------------
+lightdm
+lightdm-slick-greeter
+
+## Desktop ------------------------------
+
+# Main Packages
+xfce4
+xfce4-goodies
+xfdashboard
+lightpad
+ulauncher
+plank
+
+# Terminal
+xfce4-terminal
+
+# Apps
+vivaldi
+geany
+geany-plugins
+thunar-archive-plugin
+thunar-media-tags-plugin
+thunar-volman
+viewnior
+atril
+
+## Functionality ------------------------------
+
+## Fonts
+noto-fonts
+noto-fonts-emoji
+noto-fonts-cjk
+terminus-font
+ttf-ibm-plex
+
+## Multimedia
+ffmpegthumbnailer
+tumbler
+
+## Images
+jasper
+libwebp
+libavif
+libheif
+
+## Files
+gvfs
+gvfs-mtp
+gvfs-afc
+gvfs-gphoto2
+gvfs-smb
+gvfs-google
+highlight
+trash-cli
+ueberzug
+xdg-user-dirs
+xdg-user-dirs-gtk
+
+## Archives
+bzip2
+gzip
+lrzip
+lz4
+lzip
+lzop
+xz
+zstd
+p7zip
+zip
+unzip
+unrar
+unarchiver
+xarchiver
+
+## Misc ------------------------------
+
+## Package Tools
+pkgconf
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
+gcc
+groff
+libtool
+m4
+make
+mercurial
+patch
+subversion
+
+## CLI Tools
+htop
+nethogs
+ncdu
+powertop
+ranger
+vim
+
+## AUR Packages & Apps
+pamac
+rate-mirrors
+texinfo
 bottles
 heroic-games-launcher-bin
 lutris
 steam
 steam-native-runtime
-
-### GAMING TOOLS
-ame
 argyllcms
 boxtron
 corectrl
@@ -214,82 +372,6 @@ protontricks-git
 reshade-shaders-git
 steamtinkerlaunch
 vkbasalt
-
-#### WINE
 wine-staging
 
-##### display manager
-#sddm
-
-## AUR support
-pamac
-rate-mirrors
-autoconf
-automake
-binutils
-bison
-fakeroot
-flex
-gcc
-git
-groff
-libtool
-m4
-make
-mercurial
-patch
-pkgconf
-subversion
-texinfo
-
-##### want to have base-devel group
-
-base-devel
-
-##### want to have linux-headers
-
-linux-zen-headers
-linux-headers
-
-##### Chaotic repo
-
-chaotic-mirrorlist
-chaotic-keyring
-
-#### BTFS
-#### use alci-calamares-config-btrfs 
-
-timeshift
-grub-btrfs
-timeshift-autosnap
-btrfs-progs
-curlftpfs
-dosfstools
-e2fsprogs
-ecryptfs-utils
-exfatprogs
-f2fs-tools
-fatresize
-jfsutils
-mtools
-nfs-utils
-nilfs-utils
-ntfs-3g
-reiserfsprogs
-sshfs
-xfsprogs
-git
-
-# Unity Setup
-unity-meta
-
-# Pantheon Setup ??
-# pantheon
-# pantheon-session
-# pantheon-default-settings
-# pantheon-mail
-# pantheon-settings-daemon
-# pantheon-print
-# pantheon-polkit-agent
-# pantheon-geoclue2-agent
-# pantheon-applications-menu
+## EOF ------------------------------
